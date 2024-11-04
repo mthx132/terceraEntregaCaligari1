@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Mi Primera Entrega</title>
+    <style>
+
+        #eye {
+            cursor: pointer;
+            font-size: 24px;
+            margin-left: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <section id="margenAlto"> 
+        <h1 id="txtmarcoAlto">¡¡Bienvenido "usuario/a"!!</h1>
+        <h1 id="txtInicio">Inicio</h1>
+    </section>
+    <div id="CuadroPrincipal">
+        <h1 id="txtCuadroPrincipal">$80.000</h1>
+    <!-- <span id="eye">👁️</span>
+    <script>
+        const eye = document.getElementById("eye");
+        const txtCuadroPrincipal = document.getElementById("txtCuadroPrincipal");
+        let isVisible = true;
+        eye.onclick = function() {
+            if (isVisible) {
+                txtCuadroPrincipal.textContent = "****";
+                eye.textContent = "👁️";
+            } else {
+                txtCuadroPrincipal.textContent = "$80.000";
+                eye.textContent = "🙈";
+            }
+            isVisible = !isVisible;
+        };
+    </script> -->
+        <div id="AccionesDelCuadroPrincipal">
+            <button id="enviarDinero">Enviar dinero</button>
+            <button id="recibirDinero">Recibir dinero</button>
+        </div>
+    </div>
+    <footer id="CuadroDeTransferencias">
+        <h1>Tu última actividad:</h1>
+        <div id="detalleActividad">No hay actividad registrada.</div>
+    </footer>
+      <script src="/js/index.js"></script>
+</body>
+</html>
