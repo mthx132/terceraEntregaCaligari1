@@ -27,15 +27,6 @@ if (saldoTexto) {
 let transacciones = [];
 let botonEnviarDinero = document.getElementById("enviarDinero");
 botonEnviarDinero.onclick = function () {
- /*  function transaccionInformacion(transaccionInformacion){
-    transacciones.push({
-    nombre: nombre,
-    contrasenia: contrasenia,
-    saldo: saldo,
-    destinatario: transferencia,
-    cantidad: cantidad,
-    tipoTransaccion: transaccionInformacion,
-  })}; */
   const transferencia = prompt("A quien le deseas Transferir?:");
   let cantidad = parseInt(prompt("Cuanto deseas Enviar?:"));
 
@@ -48,7 +39,6 @@ botonEnviarDinero.onclick = function () {
                                 Fecha: ${fechaActual}`;
       document.getElementById("detalleActividad").innerHTML = informacionTransferirDinero
       saldo = saldo - cantidad;
-/*       transaccionInformacion("egreso") */
       localStorage.setItem("saldo", JSON.stringify(saldo));
       saldoTexto.textContent = `$${saldo}`;
       console.log(transacciones);
